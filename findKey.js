@@ -22,8 +22,6 @@ assertEqual(findKey({
   5: 'e'
 },x => x === 'd'), '4')
 
-
-
 assertEqual(findKey({
   "Blue Hill": { stars: 1 },
   "Akaleri":   { stars: 3 },
