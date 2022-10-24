@@ -1,15 +1,12 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`Assertion Passed : ${actual} === ${expected}`);
-  } else {
-    console.log(`Assertion Failed : ${actual} !== ${expected}`);
-  }
-};
+const assertArraysEqual = require('assertArraysEqual');
 
 const tail = function(array) {
   let lclTail = [];
+
   for (let i = 1; i < array.length; i++) {
-    lclTail[i] = array[i];
+    lclTail[i - 1] = array[i];
   }
   return lclTail;
 };
+
+module.exports = tail;
